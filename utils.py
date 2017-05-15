@@ -8,10 +8,11 @@ def find_trainable_variables(key):
 
 
 def preprocess(text, front_pad='\n ', end_pad=' '):
+
     text = html.unescape(text)
     text = text.replace('\n', ' ').strip()
     text = front_pad+text+end_pad
-    text = text.encode()
+    text = text.encode('utf-8')
     return text
 
 
