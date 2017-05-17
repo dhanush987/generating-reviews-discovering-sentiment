@@ -1,6 +1,7 @@
 from encoder import Model
 model=Model()
-text = ['I do not disagree that we may end up in a bad place']
+#text = ['I do not disagree that we may end up in a bad place']
+"""
 text = ['Bridge Loan Financing Bills May Not Meet Their May 8th Deadline Due to Lack\
  of Support.\
 Sources report there will not be a vote regarding the authorization for the\
@@ -19,7 +20,16 @@ hat the bond issuance happen by July 1, 2001.  If not, the state may be in \
 breach of contract.  Sources state that if the legislature does not pass the\
  bridge loan legislation by May 8th, having a bond issuance by July 1st will\
  be very difficult.']
+"""
+"""
+text = ['Bahah I can see your whole history \
+Including the parts where you debated separating the chat you invited me to because I would make off with your technical papers \
+Real nice']
+"""
 text_features = model.transform(text)
+print (text_features.shape)
+print (text_features)
+
 #17.660 seconds to transform 8 examples
 for i in range(len(text)):
 	sentiment = text_features[i, 2388]

@@ -2,7 +2,7 @@
 from encoder import Model
 mdl = Model()
 
-base = "I couldn’t figure out"
+base = "Dhanush is"
 print("\'%s\'... --> (argmax sampling):" % base)
 
 #Overriden values are slightly on the extreme on either end of 
